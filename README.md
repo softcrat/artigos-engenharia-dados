@@ -12,7 +12,7 @@ Neste repositório, você encontrará uma série de artigos e tutoriais sobre t�
 
 ## 📝 Artigos
 
-Aqui estão os principais artigos que você pode encontrar neste repositório:
+Aqui estão os principais artigos publicado ou que serão publicado em breve neste repositório:
 
 ### 1. [**Introdução ao Apache Airflow**](airflow-pipeline.md)
    - Neste artigo, explico o que é o **Apache Airflow**, como instalá-lo, e crio um pipeline de dados básico para orquestrar tarefas de ETL. Ideal para quem está começando com orquestração de dados.
