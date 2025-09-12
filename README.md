@@ -1,6 +1,6 @@
 # Artigos sobre Engenharia de Dados
 
-Bem-vindo ao meu repositório de artigos sobre Engenharia de Dados! Aqui você encontrará tutoriais, guias práticos e reflexões sobre as melhores práticas e ferramentas da área. O objetivo deste repositório é compartilhar conhecimento e experiências sobre tópicos como **ETL**, **Data Lakes**, **Data Warehousing**, **orquestração de dados**, e muito mais.
+Bem-vindo ao meu repositório de artigos sobre Engenharia de Dados! Aqui você encontrará tutoriais, guias práticos e reflexões sobre as melhores práticas e ferramentas da área. O objetivo deste repositório é compartilhar conhecimento e experiências sobre tópicos como **ETL**, **Data Lakes**, **Data Lakehouse**, **orquestração de dados**, e muito mais.
 
 ---
 
