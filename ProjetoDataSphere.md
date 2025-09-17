@@ -18,10 +18,10 @@ Tive a oportunidade de participar de um projeto desafiador de engenharia de dado
 ##  Visualização e análise: 
   ✔️ integração com Power BI, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para a tomada de decisão.<br>
 
-Esse projeto reforçou a importância de arquiteturas bem planejadas e boas práticas em engenharia de dados, trazendo benefícios como:
-✔️ Maior governança e padronização;
-✔️ Redução de retrabalho em relatórios;
-✔️ Facilidade de consumo por diferentes ferramentas analíticas.
+Esse projeto reforçou a importância de arquiteturas bem planejadas e boas práticas em engenharia de dados, trazendo benefícios como:<br>
+✔️ Maior governança e padronização<br>
+✔️ Redução de retrabalho em relatórios<br>
+✔️ Facilidade de consumo por diferentes ferramentas analíticas.<br>
 
 
 O resultado foi um ecossistema de dados seguro, padronizado e escalável, que potencializa a análise e a tomada de decisão baseada em dados.
