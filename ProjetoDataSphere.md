@@ -2,7 +2,8 @@
 Tive a oportunidade de participar de um projeto desafiador de engenharia de dados, que envolveu as seguintes etapas:
 
 
-##  Integração de múltiplas fontes: extração de dados de sistemas transacionais distintos (banco Oracle e banco SAP HANA).
+##  Integração de múltiplas fontes: 
+  ✔️ extração de dados de sistemas transacionais distintos (banco Oracle e banco SAP HANA).
 
 ##  Processo de ETL: 
   ✔️ criação de tabelas remotas, dataflows e replication flows, possibilitando a ingestão de dados de diferentes sistemas para dentro do SAP Datasphere.<br>
