@@ -34,3 +34,4 @@ Tive a oportunidade de participar de um projeto desafiador de **engenharia de da
 O resultado foi a entrega de um **ecossistema de dados seguro, padronizado e escalável**, que fortalece a tomada de decisão orientada a dados.  
 
 Mais do que a tecnologia, o grande diferencial foi a **colaboração entre áreas de negócio e TI**, garantindo que a solução estivesse alinhada às necessidades estratégicas da organização.
+Esse projeto só foi possível graças ao **trabalho em equipe**, ao empenho e à troca de conhecimento entre todos os envolvidos, que juntos transformaram o desafio em resultados concretos para a organização.  
