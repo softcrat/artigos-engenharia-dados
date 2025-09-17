@@ -14,7 +14,7 @@ Tive a oportunidade de participar de um projeto desafiador de engenharia de dado
 ##  Segurança aplicada: 
   ✔️ Foram implementadas regras de RLS - (Row-Level Security), assegurando que cada usuário acesse somente os dados que lhe são permitidos, fortalecendo a governança e a confiabilidade da solução.<br>
 ##  Disponibilização dos dados: 
-  ✔️ Tada as fato e dimensões foram publicadas via protocolo OData, garantindo interoperabilidade e melhores práticas no consumo de dados usando REST APIs.<br>
+  ✔️ Todas as Fatos e Dimensões foram publicadas via protocolo OData, garantindo interoperabilidade e melhores práticas no consumo de dados usando REST APIs.<br>
 ##  Visualização e análise: 
   ✔️ integração com Power BI, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para a tomada de decisão.<br>
 
