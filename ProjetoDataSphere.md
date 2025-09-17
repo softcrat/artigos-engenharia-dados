@@ -6,21 +6,21 @@ Tive a oportunidade de participar de um projeto desafiador de **engenharia de da
 ✔️ Extração de dados de sistemas transacionais distintos (**Oracle** e **SAP HANA**).  
 
 ## ⚙️ Processo de ETL
-✔️ Criação de **tabelas remotas**, **dataflows** e **replication flows**, possibilitando a ingestão de dados no **SAP Datasphere**.  
-✔️ Padronização, limpeza e tratamento das informações, garantindo consistência e qualidade.  
-✔️ Implementação de **TaskChains** para orquestração e automação dos processos de extração.  
+✔️ Foram criadas as  **tabelas remotas**, **dataflows** e **replication flows**, possibilitando a ingestão de dados no **SAP Datasphere**.  
+✔️ Foram criadas varias padronizações, limpeza e tratamento das informações, garantindo consistência e qualidade.  
+✔️ Foram criados mecanismo de orquestração das extrações de dados via agendamentos, estes feitos atravez da  criação de TaskChain dentro do Sap Datasphere.
 
 ## 📐 Modelagem Dimensional
-✔️ Estruturação de dados em **fatos e dimensões**, seguindo boas práticas de Data Warehousing para otimizar a performance analítica.  
+✔️ Foi realizada a modelagem de dados estruturados em **fatos e dimensões**, seguindo boas práticas de Data Warehousing para otimizar a performance analítica.  
 
 ## 🔒 Segurança aplicada
-✔️ Implementação de **Row-Level Security (RLS)**, garantindo acesso controlado e seguro aos dados, fortalecendo a governança.  
+✔️ Foram implementadas regras de RLS -**Row-Level Security**, garantindo acesso controlado e seguro aos dados, fortalecendo a governança.  
 
 ## 🌐 Disponibilização dos dados
-✔️ Publicação das tabelas de **fatos e dimensões** via **OData**, assegurando interoperabilidade e melhores práticas no consumo de dados através de **REST APIs**.  
+✔️ Todas as **fatos e dimensões** foram publicadas via **OData**, garantindo a interoperabilidade e melhores práticas no consumo de dados através de **REST APIs**.  
 
 ## 📊 Visualização e análise
-✔️ Integração com **Power BI**, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para suporte à decisão.  
+✔️ Foi feita a Integração com **Power BI**, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para suporte à decisão.  
 
 ---
 
