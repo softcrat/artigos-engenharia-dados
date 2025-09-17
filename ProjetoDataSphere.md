@@ -5,12 +5,16 @@ Tive a oportunidade de participar de um projeto desafiador de engenharia de dado
 ##  Integração de múltiplas fontes: extração de dados de sistemas transacionais distintos (banco Oracle e banco SAP HANA).
 
 ##  Processo de ETL: 
-criação de tabelas remotas, dataflows e replication flows, possibilitando a ingestão de dados de diferentes sistemas para dentro do SAP Datasphere.
-padronização, limpeza e tratamento das informações para garantir consistência e qualidade. Além disso podemos cita os mecanismo de orquestração das extrações de dados via agendamentos, estes feitos atravez da criação de TaskChain dentro do Sap Datasphere.
-##  Modelagem Dimensional: criação de estruturas de fatos e dimensões, seguindo boas práticas de Data Warehousing para otimizar consultas analíticas.
-##  Segurança aplicada na modelagem: implementação de Row-Level Security (RLS), assegurando que cada usuário acesse somente os dados que lhe são permitidos, fortalecendo a governança e a confiabilidade da solução.
-##  Disponibilização dos dados: publicação via protocolo OData, garantindo interoperabilidade e melhores práticas no consumo de dados em REST APIs.
-##  Visualização e análise: integração com Power BI, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para a tomada de decisão.
+  ✔️ criação de tabelas remotas, dataflows e replication flows, possibilitando a ingestão de dados de diferentes sistemas para dentro do SAP Datasphere.
+  ✔️ padronização, limpeza e tratamento das informações para garantir consistência e qualidade. Além disso podemos cita os mecanismo de orquestração das extrações de dados via agendamentos, estes feitos atravez da   ✔️ criação de TaskChain dentro do Sap Datasphere.
+##  Modelagem Dimensional: 
+  ✔️ criação de estruturas de fatos e dimensões, seguindo boas práticas de Data Warehousing para otimizar consultas analíticas.
+##  Segurança aplicada na modelagem: 
+  ✔️ implementação de Row-Level Security (RLS), assegurando que cada usuário acesse somente os dados que lhe são permitidos, fortalecendo a governança e a confiabilidade da solução.
+##  Disponibilização dos dados: 
+  ✔️ publicação via protocolo OData, garantindo interoperabilidade e melhores práticas no consumo de dados em REST APIs.
+##  Visualização e análise: 
+  ✔️ integração com Power BI, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para a tomada de decisão.
 
 Esse projeto reforçou a importância de arquiteturas bem planejadas e boas práticas em engenharia de dados, trazendo benefícios como:
 ✔️ Maior governança e padronização;
