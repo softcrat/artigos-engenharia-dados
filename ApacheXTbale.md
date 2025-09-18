@@ -25,6 +25,8 @@ Isso significa que uma tabela escrita em um formato pode ser lida por mecanismos
 * **Modos de Sincronização**: Oferece dois modos principais:
     * **Sincronização Incremental**: Um modo leve e de alto desempenho, ideal para tabelas grandes.
     * **Sincronização Completa**: Utilizado quando a sincronização incremental não é aplicável.
+
+ ---
  
 ### Quando devo usar ?
 Será multo util nos cenários onde você precise usar o que as melhores futures de cada ferramenta, por exemplo ingestão ou indexação extremamente rápidas do Hudi e tabela gerenciadas do Hudi, acelerações de consultas por fótons do Delta Lake dentro do Databricks. Em fim Independentemente da combinação de formatos que você precisar, o Apache XTable vai garantir que você possa se beneficiar dos formatos que hoje dominam o mercado. 
