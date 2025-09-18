@@ -22,7 +22,9 @@ Tive a oportunidade de participar de um projeto desafiador de **engenharia de da
 ## 📊 Visualização e análise
 ✔️ Foi feita a Integração com **Power BI**, permitindo que usuários de negócio tenham acesso a dashboards interativos e confiáveis para suporte à decisão.  
 
----
+## 📊 Integração com IA
+✔️ A padronização da nossa camada de dados — incluindo fatos, dimensões e suas colunas — foi essencial para otimizar o desenvolvimento e a implementação de modelos de IA, resultando em maior eficiência e escalabilidade.
+
 
 ### 💡 Benefícios alcançados
 ✔️ Maior **governança e padronização**  
