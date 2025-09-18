@@ -29,4 +29,4 @@ Isso significa que uma tabela escrita em um formato pode ser lida por mecanismos
  ---
  
 ### Quando devo usar ?
-Será multo util nos cenários onde você precise usar o que as melhores futures de cada ferramenta, por exemplo ingestão ou indexação extremamente rápidas do Hudi e tabela gerenciadas do Hudi, acelerações de consultas por fótons do Delta Lake dentro do Databricks. Em fim Independentemente da combinação de formatos que você precisar, o Apache XTable vai garantir que você possa se beneficiar dos formatos que hoje dominam o mercado. 
+Ele será multo util nos cenários onde você precise usar o que as melhores futures de cada ferramenta, por exemplo ingestão ou indexação extremamente rápidas do Hudi e tabela gerenciadas do Hudi, acelerações de consultas por fótons do Delta Lake dentro do Databricks. Em fim Independentemente da combinação de formatos que você precisar, o Apache XTable vai garantir que você possa se beneficiar dos formatos que hoje dominam o mercado. 
