@@ -282,6 +282,8 @@ Objetivo: desenhar um fluxo NiFi para consumir paginated REST APIs, transformar 
 * **Backpressure e rate limits**: throttle quando consumir APIs externas.
 * **Segurança**: mantenha credenciais em vault/SecretManager; use TLS nas conexões JDBC e S3.
 
+## Agendamento da Execução
+
 O Airflow tem um agendador nativo, chamado Scheduler, que é justamente o coração da orquestração. Ele fica responsável por:
 
 Ler as DAGs (arquivos Python que você define).
