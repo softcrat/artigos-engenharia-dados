@@ -1,8 +1,5 @@
-Perfeito — abaixo seguem três blocos completos, práticos e prontos para você aplicar: (1) **pipeline Spark** lendo do SAP HANA e gravando no PostgreSQL otimizado para ~20M de registros; (2) **integração Airflow ↔ Spark (standalone)** para orquestração; (3) **fluxo NiFi** que extrai de APIs REST e persiste em MinIO. Tudo em tom humano, direto ao ponto, com exemplos de configuração e código.
 
----
-
-# 1) Pipeline Spark: ler do SAP HANA e gravar no PostgreSQL (otimizado para 20M de registros)
+# Pipeline Spark: ler do SAP HANA e gravar no PostgreSQL (otimizado para 20M de registros)
 
 Objetivo: extrair 20M de registros do SAP HANA, transformar (se necessário) e gravar no PostgreSQL com throughput e confiabilidade.
 
