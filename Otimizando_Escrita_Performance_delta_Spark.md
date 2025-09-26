@@ -28,7 +28,7 @@ Automatizar a execução de OPTIMIZE em janelas de baixa carga, já que o proces
 
 ## 2. Reduzindo o problema de arquivos pequenos no MinIO
 
-Ao escrever dados no MinIO (ou S3), o Spark pode gerar muitos arquivos pequenos devido ao paralelismo natural da execução. Isso não apenas ocupa espaço, mas também prejudica a performance de leitura no Delta Lake.
+Ao escrever dados no MinIO (ou S3), o Spark pode gerar muitos arquivos pequenos devido ao paralelismo natural da execução. Isso não apenas ocupa espaço, mas também prejudica a performance de leitura quando usamo o Delta Lake.
 
 Estratégias para lidar com o problema:
 
