@@ -3,14 +3,14 @@
 Quando lidamos com grandes volumes de dados em ambientes de Lakehouse, a eficiência na escrita e leitura faz toda a diferença. Usar o Delta Lake em conjunto com o Spark e armazenamentos como o MinIO abre possibilidades poderosas, mas também traz desafios: fragmentação de arquivos, lentidão em consultas e joins custosos.
 Neste artigo, compartilho estratégias práticas para lidar com esses problemas no dia a dia.
 
-# 1. Otimizando escrita no Delta Lake com OPTIMIZE e Z-ORDER
+### 1. Otimizando escrita no Delta Lake com OPTIMIZE e Z-ORDER
 
 Ao longo do tempo, tabelas Delta tendem a acumular muitos arquivos pequenos, o que degrada a performance das consultas. Para mitigar isso, o Delta Lake oferece o comando OPTIMIZE, que faz a compactação de arquivos em unidades maiores e mais eficientes para leitura.
 
-# OPTIMIZE:
+### OPTIMIZE:
 Consolida vários arquivos pequenos em arquivos de tamanho ideal (normalmente entre 256MB e 1GB). Isso reduz o overhead de leitura e melhora a performance de scans completos.
 
-# Z-ORDER:
+### Z-ORDER:
 Quando combinado ao optimize, o Z-ORDER organiza fisicamente os dados em disco de acordo com colunas de alto filtro nas consultas.
 Exemplo típico:
 
@@ -26,7 +26,7 @@ Usar Z-ORDER em colunas que mais aparecem nos filtros (WHERE, JOIN, GROUP BY).
 
 Automatizar a execução de OPTIMIZE em janelas de baixa carga, já que o processo consome recursos.
 
-# 2. Reduzindo o problema de arquivos pequenos no MinIO
+## 2. Reduzindo o problema de arquivos pequenos no MinIO
 
 Ao escrever dados no MinIO (ou S3), o Spark pode gerar muitos arquivos pequenos devido ao paralelismo natural da execução. Isso não apenas ocupa espaço, mas também prejudica a performance de leitura no Delta Lake.
 
@@ -49,14 +49,14 @@ df.coalesce(1).write.format("delta").mode("overwrite").save(caminho)
 Auto Optimize e Auto Compact (quando disponíveis):
 No Databricks, recursos automáticos podem gerenciar esse problema, mas em ambientes com MinIO puro, vale mais a pena automatizar um job de OPTIMIZE periódico.
 
-# Compactação pós-escrita:
+## Compactação pós-escrita:
 Criar um job dedicado apenas para consolidar os arquivos pequenos, usando OPTIMIZE ou mesmo um processo customizado de merge.
 
 3. Particionamento e paralelismo no Spark para joins grandes
 
 Outra dor comum em grandes volumes são os joins custosos, que muitas vezes resultam em shuffles pesados. Existem boas práticas para aliviar esse cenário:
 
-Particionamento estratégico:
+## Particionamento estratégico:
 Particionar tabelas do Delta Lake por colunas usadas com frequência em filtros e joins.
 Exemplo:
 
