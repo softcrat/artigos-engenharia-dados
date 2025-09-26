@@ -50,12 +50,12 @@ pg_props = {
     "isolationLevel": "NONE"  # avaliar conforme sua política
 }
 
-# --- 1) Estimar bounds para particionamento (usar coluna numérica/PK)
-# Supondo que a tabela tenha uma coluna id numérica e contínua
+# 1) Estimar bounds para particionamento (usar coluna numérica/PK)
+ Supondo que a tabela tenha uma coluna id numérica e contínua
 partition_col = "id"
 table_hana = "SCHEMA.TABLE_HANA"
 
-# opcional: ler min/max para particionar (uma leitura rápida)
+opcional: ler min/max para particionar (uma leitura rápida)
 bounds_q = f"(select min({partition_col}) as min_id, max({partition_col}) as max_id from {table_hana}) as bounds"
 bounds_df = spark.read.jdbc(url=hana_jdbc, table=bounds_q, properties=hana_props)
 bounds = bounds_df.collect()[0]
@@ -64,11 +64,11 @@ total = None
 if min_id is None or max_id is None:
     raise RuntimeError("Não foi possível determinar bounds para particionamento.")
 
-# número de partições: balanceie entre paralelismo e overhead.
-# Para 20M linhas, algo entre 100-400 partições costuma funcionar dependendo do cluster.
+número de partições: balanceie entre paralelismo e overhead.
+Para 20M linhas, algo entre 100-400 partições costuma funcionar dependendo do cluster.
 num_partitions = 200
 
-# --- 2) Ler paralelamente do HANA
+# 2) Ler paralelamente do HANA
 jdbc_table = table_hana  # ou consulta SQL entre parênteses como subquery alias
 df = spark.read.jdbc(
     url=hana_jdbc,
@@ -80,15 +80,15 @@ df = spark.read.jdbc(
     properties=hana_props
 )
 
-# opcional: filtros iniciais / projeção para reduzir dados
+opcional: filtros iniciais / projeção para reduzir dados
 df = df.select("id", "col_a", "col_b", "data_evento") \
        .filter(col("data_evento").isNotNull())
 
-# Persistir caso vá reusar
+Persistir caso vá reusar
 df = df.repartition(200, col("id"))  # repartition antes do write para paralelismo desejado
 
-# --- 3) Escrita: estratégia segura e performática
-# Opção A: escrita paralela direta (append) com batchsize
+# 3) Escrita: estratégia segura e performática
+ Opção A: escrita paralela direta (append) com batchsize
 df.write \
   .format("jdbc") \
   .option("url", pg_jdbc) \
@@ -100,7 +100,7 @@ df.write \
   .mode("append") \
   .save()
 
-# Observação: para garantir idempotência/upsert, prefira escrever em staging table e depois executar MERGE/INSERT ON CONFLICT no Postgres.
+Observação: para garantir idempotência/upsert, prefira escrever em staging table e depois executar MERGE/INSERT ON CONFLICT no Postgres.
 
 spark.stop()
 '''
