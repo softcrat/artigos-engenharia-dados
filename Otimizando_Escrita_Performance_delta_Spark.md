@@ -52,7 +52,7 @@ No Databricks, recursos automáticos podem gerenciar esse problema, mas em ambie
 ## Compactação pós-escrita:
 Criar um job dedicado apenas para consolidar os arquivos pequenos, usando OPTIMIZE ou mesmo um processo customizado de merge.
 
-3. Particionamento e paralelismo no Spark para joins grandes
+## 3. Particionamento e paralelismo no Spark para joins grandes
 
 Outra dor comum em grandes volumes são os joins custosos, que muitas vezes resultam em shuffles pesados. Existem boas práticas para aliviar esse cenário:
 
@@ -74,7 +74,7 @@ df_grande.join(broadcast(df_pequeno), "id")
 # Configuração de paralelismo:
 Ajustar o número de partições para o tamanho real do cluster:
 
-spark.conf.set("spark.sql.shuffle.partitions", 400)
+spark.config("spark.sql.shuffle.partitions", 400)
 
 
 Valores muito baixos causam gargalo.
