@@ -39,6 +39,8 @@ Veja alguns dos principais casos de uso:
 3. **Segurança e Governança Corporativa**
 4. **Modelagem Sem Código (Low-Code)**
 5. **Escalabilidade em Nuvem**
+6.  **Compatibilidade com ferramentas de BI e machine learning**
+7.   **Execução em tempo real ou em batch**
 
 ---
 
@@ -58,6 +60,15 @@ O Datasphere oferece **três abordagens principais** para movimentar e transform
 ### 🧩 Data Flow (Fluxo de Dados)
 - **O que é:** Um pipeline visual para construir processos ETL completos — conectando fontes, aplicando filtros, junções, agregações e carregando dados no destino.  
 - **Quando usar:** Ideal para **cargas periódicas (batch)** ou **processamentos de integração lógica**.
+  
+#### ⚠️ Observação Importante
+O **Data Flow depende de uma *Remote Table*** como origem.  
+Isso significa que os dados precisam estar previamente disponíveis no Datasphere como uma **tabela remota**, conectada a uma fonte externa (como SAP HANA, S/4HANA, PostgreSQL, etc.).
+
+#### 🔍 O que é uma Remote Table?
+Uma **Remote Table** é uma tabela virtual que **representa dados armazenados em outro sistema**, acessados via **conexão remota** (Remote Connection).  
+Ela **não armazena fisicamente os dados** — apenas os referencia, permitindo consultas e replicações sob demanda.
+
 
 ### ⚡ Replication Flow (Fluxo de Replicação)
 - **O que é:** Um processo de **replicação em tempo real** entre sistemas SAP e não SAP, com Change Data Capture (CDC).  
@@ -68,23 +79,8 @@ O Datasphere oferece **três abordagens principais** para movimentar e transform
 - **Quando usar:** Ideal para **criação de visões analíticas** e **modelos semânticos**.
 
 ---
+#### No Data flow é necessário primeiro criar um remote 
 
-## 🧭 Diagrama: Formas de ETL no SAP Datasphere
-
-```mermaid
-graph TD
-    A[Fontes de Dados] -->|Extract| B[Data Flow]
-    A -->|Replicate| C[Replication Flow]
-    A -->|Virtualize| D[SQL View / Graphical View]
-
-    B -->|Transform| E[(Camada de Dados no Datasphere)]
-    C -->|Sync| E
-    D -->|Query| E
-
-    E --> F[Camada de Consumo (BI, SAC, Power BI)]
-```
-
----
 
 ## 🏁 Conclusão
 
