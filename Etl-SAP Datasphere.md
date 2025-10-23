@@ -79,7 +79,7 @@ Ela **não armazena fisicamente os dados** — apenas os referencia, permitindo 
 - **Quando usar:** Ideal para **criação de visões analíticas** e **modelos semânticos**.
 
 ---
-#### No Data flow é necessário primeiro criar um remote 
+
 
 
 ## 🏁 Conclusão
