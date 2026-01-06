@@ -20,3 +20,8 @@ A tranformação processamento dos dados ficou assim:
 <img width="1257" height="173" alt="image" src="https://github.com/user-attachments/assets/6e1898c5-4238-4562-a677-652779c5d1d0" />
 
 
+<img width="945" height="221" alt="image" src="https://github.com/user-attachments/assets/22a290e7-b1a0-4148-934c-ba968a3b3641" />
+<img width="924" height="263" alt="image" src="https://github.com/user-attachments/assets/a7d71438-f2ff-401b-be58-9bc63483285a" />
+<img width="779" height="162" alt="image" src="https://github.com/user-attachments/assets/8be32ffe-7a46-4c20-a002-9fc4f30ad3ad" />
+
+
