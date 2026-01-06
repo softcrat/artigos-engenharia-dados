@@ -16,5 +16,7 @@ O step Copy rows to result vai copiar o resultado para a memória
 Subjob Que processa os dados
 <img width="866" height="289" alt="image" src="https://github.com/user-attachments/assets/2a0ddf26-2631-4567-8949-e4cc2fb12fc7" />
 
+A tranformação processamento dos dados ficou assim:
+<img width="1257" height="173" alt="image" src="https://github.com/user-attachments/assets/6e1898c5-4238-4562-a677-652779c5d1d0" />
 
 
